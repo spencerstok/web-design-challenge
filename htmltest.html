@@ -1,0 +1,196 @@
+<!-- 
+    meta (metadata)
+    head (tab editing)
+    body (body of website)
+    br ()
+    img
+    a
+    html
+    marquees (adds scrolling)
+    option (dropdown)
+    ol (ordered list)
+    ul (unordered list)
+    li (list item)
+    table
+    input
+    form]
+    iframe (embedding of another website)
+    hr (row (line accross the top)
+    figure(photo link)
+    figcaption (figure caption)
+ -->
+
+
+<!-- CSS is done within <style> -->
+
+<!-- Tells the broswer this is an html file -->
+<!DOCTYPE html> 
+<!--  Think of HTML like a tree starts at a base then branches out -->
+<!-- Attributs go inside of the beginning tag before the > close -->
+<html lang='en-us'> 
+    <!-- The head tag has more information about the file -->
+    <head>
+        <!-- Meta is a self closing tag so no need for beginning and end
+        This usually just has character set for file -->
+        <meta charset="UTF-8">
+        <!-- This is the title of the website -->
+        <title>I love Brooke</title>
+        <!-- Import the stylesheet -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+
+    </head> 
+
+    <!-- This is CSS  -->
+<style>
+    /* h1 {
+        font-size:100px;
+        background-color: deeppink;
+        text-decoration: rgb(134, 98, 219);  
+    } */
+    /* Add manual Margins */
+    /* h2 {
+        margin-top: 150px;
+        margin-bottom: 150px;
+        font-size:50px;
+        background-color: deeppink;
+        text-decoration: rgb(134, 98, 219);  
+    } */
+    /* Auto Center */
+    img{
+        margin-left: auto;
+        margin-right:auto;
+        display: block;
+    }
+
+    ul {
+        border-style: dashed;
+        border-width: 5px;
+        list-style-position: inside;
+
+    }
+
+    ol {
+        border-style: double;
+        border-width: 5px;
+        list-style-position: inside;
+
+    }
+    /* #are used for IDs */
+    #bigboyheader {
+        font: size 169px;
+        background-color: deeppink;
+    }
+    /* .are used for classes */
+    .medheader{
+        font:size 169px;
+        background-color: teal;
+    }
+/* This can also bedone with IDs */
+</style>
+
+<body>
+
+    <!-- Headers Decrease in size as the number incerases -->
+    <h1 class="bigheader" id="bigboyheader" >Brooke is so sexy</h1>
+    <h2 class="medheader">Brooke is so nice</h2>
+    <h3>It would be amazing</h3>
+    <h4>If we could get some rice</h4>
+    <!-- BR puts a break -->
+    <br>
+    <!-- Image is self closing, Need to provide an src link -->
+    <!-- If image is unable to display it will display whatever you put under alt -->
+    <img src= "resources/assets/images/Fig1.png" alt="Fig1 Image is not available">
+    <br>
+    <!-- Create a link to another webpage -->
+    <!-- target = "_blank" allows you to make it open a link in a new tab -->
+    <!-- Using <strong> allows you to bold items -->
+    <strong><a href="https://google.com" target="_blank">This is the link</a></strong>
+    <!-- Using # you can build links to add links in later -->
+    <a href="#">Placeholder for later</a>
+
+<!-- Buyilding out a table -->
+    <table border="1">
+        <!-- This includes all of the header information -->
+        <thead >
+            <!-- Use this for each table row -->
+            <tr>
+                <!-- Table Header -->
+                <!--  Make colspan how many columns you want to have   -->
+                <th colspan = "4"> What the tables about</th>
+            <!-- Column Headers -->
+            </tr>
+            <tr>
+                <!-- th to specify table data when in header -->
+                <th>Col1</th>
+                <th>Col1</th>
+                <th>Col1</th>
+                <th>Col1</th>
+            </tr>
+        </thead>
+        <!-- Tbody is optional, you can skip thead and tbody however this makes it micer looking -->
+        <tbody>
+            <!-- Table row -->
+            <tr>
+                <!-- td to specify table data when in body -->
+                <td>Row1</td>
+                <td>Row1</td>
+                <td>Row1</td>
+                <td>Row1</td>
+            </tr>
+            <tr>
+                <td>Row2</td>
+                <td>Row2</td>
+                <td>Row2</td>
+                <td>Row2</td>
+            </tr>
+            <tr>
+                <td>Row3</td>
+                <td>Row3</td>
+                <td>Row3</td>
+                <td>Row3</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+
+<ul>
+    <li>test</li>
+    <li>test</li>
+    <li>test</li>
+    <li>test</li>
+
+</ul>
+
+
+<ol>
+    <li>test</li>
+    <li>test</li>
+    <li>test</li>
+    <li>test</li>
+
+</ol>
+
+<!-- Section will group certain items together -->
+<section>
+<!-- make a figure -->
+<figure>
+    <a href="https://www.google.com">
+    <img src = resources/assets/images/Fig2.png >
+    </a>
+    <!-- em makes it italics -->
+    <figcaption><em>This takes you to google</em></figcaption>
+</figure>
+
+<!-- Can also do a similar thing with article -->
+<article>
+    <a href="https://www.google.com">
+    <img src = resources/assets/images/Fig2.png >
+    </a>
+    <!-- This part is different (since we are not using a figure) -->
+    <p><em>This is another caption but created differently</em></p>
+</article>
+</section>
+</body>
+</html>

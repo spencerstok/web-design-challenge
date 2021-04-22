@@ -1,0 +1,29 @@
+/*
+ * Static: Default positioning
+ */
+
+ h1{
+  style="color:rgb(51, 255, 0);"
+ }
+ p{
+  style="color:rgb(51, 255, 0);"
+ }
+ h2{
+  style="color:rgb(51, 255, 0);"
+
+ }
+ h3{
+  style="color:rgb(51, 255, 0);"
+ }
+.box-set {
+  position: relative;
+  height: 800px;
+  background: darkgray;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background: #2db34a;
+  border: 10px solid black;
+}
